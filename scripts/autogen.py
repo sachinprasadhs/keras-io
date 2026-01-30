@@ -27,6 +27,7 @@ from examples_master import EXAMPLES_MASTER
 import tutobooks
 import generate_tf_guides
 import render_presets
+import render_special_presets
 
 EXAMPLES_GH_LOCATION = Path("keras-team") / "keras-io" / "blob" / "master" / "examples"
 GUIDES_GH_LOCATION = Path("keras-team") / "keras-io" / "blob" / "master" / "guides"
@@ -605,6 +606,7 @@ class KerasIO:
             template = template.replace("{{toc}}", toc)
         if "keras_hub/" in path_stack:
             template = render_presets.render_tags(template)
+            template = render_special_presets.render_tags(template)
         source_path = Path(self.md_sources_dir) / Path(*path_stack)
         if path.endswith("/"):
             md_source_path = source_path / "index.md"

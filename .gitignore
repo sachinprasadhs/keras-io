@@ -1,5 +1,8 @@
 tmp/*
 sources/*
+# Whitelist specific markdown files to track
+!sources/keras_hub/export_safetensors.md
+!sources/keras_hub/convert_huggingface.md
 site/*
 *.DS_Store
 *.pyc
