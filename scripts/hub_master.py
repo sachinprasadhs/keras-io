@@ -1560,6 +1560,61 @@ MODELS_MASTER = {
             ],
         },
         {
+            "path": "metaclip_2/",
+            "title": "MetaCLIP 2",
+            "toc": True,
+            "children": [
+                {
+                    "path": "metaclip_2_image_converter",
+                    "title": "MetaCLIP2ImageConverter",
+                    "generate": [
+                        "keras_hub.layers.MetaCLIP2ImageConverter",
+                        "keras_hub.layers.MetaCLIP2ImageConverter.from_preset",
+                    ],
+                },
+                {
+                    "path": "metaclip_2_tokenizer",
+                    "title": "MetaCLIP2Tokenizer",
+                    "generate": [
+                        "keras_hub.tokenizers.MetaCLIP2Tokenizer",
+                        "keras_hub.tokenizers.MetaCLIP2Tokenizer.from_preset",
+                    ],
+                },
+                {
+                    "path": "metaclip_2_vision_encoder",
+                    "title": "MetaCLIP2VisionEncoder",
+                    "generate": [
+                        "keras_hub.models.MetaCLIP2VisionEncoder",
+                        "keras_hub.models.MetaCLIP2VisionEncoder.from_preset",
+                    ],
+                },
+                {
+                    "path": "metaclip_2_text_encoder",
+                    "title": "MetaCLIP2TextEncoder",
+                    "generate": [
+                        "keras_hub.models.MetaCLIP2TextEncoder",
+                        "keras_hub.models.MetaCLIP2TextEncoder.from_preset",
+                    ],
+                },
+                {
+                    "path": "metaclip_2_backbone",
+                    "title": "MetaCLIP2Backbone model",
+                    "generate": [
+                        "keras_hub.models.MetaCLIP2Backbone",
+                        "keras_hub.models.MetaCLIP2Backbone.from_preset",
+                    ],
+                },
+                {
+                    "path": "metaclip_2_causal_lm_preprocessor",
+                    "title": "MetaCLIP2CausalLMPreprocessor",
+                    "generate": [
+                        "keras_hub.models.MetaCLIP2CausalLMPreprocessor",
+                        "keras_hub.models.MetaCLIP2CausalLMPreprocessor.from_preset",
+                    ],
+                },
+            ],
+        },
+        {
             "path": "mistral/",
             "title": "Mistral",
             "toc": True,
